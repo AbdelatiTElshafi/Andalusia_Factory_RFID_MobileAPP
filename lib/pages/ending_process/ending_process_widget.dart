@@ -266,7 +266,7 @@ class _EndingProcessWidgetState extends State<EndingProcessWidget> {
                                                           .labelMedium
                                                           .fontStyle,
                                                 ),
-                                                color: Color(0xFF444444),
+                                                color: Colors.white,
                                                 fontSize: 13.0,
                                                 letterSpacing: 0.0,
                                                 fontWeight: FontWeight.w600,
@@ -585,8 +585,7 @@ class _EndingProcessWidgetState extends State<EndingProcessWidget> {
                                                                   .bodyMedium
                                                                   .fontStyle,
                                                         ),
-                                                        color:
-                                                            Color(0xFF1A1A1A),
+                                                        color: Colors.black,
                                                         fontSize: 15.0,
                                                         letterSpacing: 0.0,
                                                         fontWeight:
@@ -667,7 +666,7 @@ class _EndingProcessWidgetState extends State<EndingProcessWidget> {
                                                       .labelMedium
                                                       .fontStyle,
                                             ),
-                                            color: Color(0xFF444444),
+                                            color: Colors.white,
                                             fontSize: 13.0,
                                             letterSpacing: 0.0,
                                             fontWeight: FontWeight.w600,
@@ -791,7 +790,7 @@ class _EndingProcessWidgetState extends State<EndingProcessWidget> {
                                                   .bodyMedium
                                                   .fontStyle,
                                         ),
-                                        color: Color(0xFF1A1A1A),
+                                        color: Colors.black,
                                         fontSize: 15.0,
                                         letterSpacing: 0.0,
                                         fontWeight: FlutterFlowTheme.of(context)
@@ -954,6 +953,9 @@ class _EndingProcessWidgetState extends State<EndingProcessWidget> {
                                         .fontStyle,
                                   ),
                           elevation: 0.0,
+                          borderSide: BorderSide(
+                            color: Color(0xFF999999),
+                          ),
                           borderRadius: BorderRadius.circular(14.0),
                           disabledColor: FlutterFlowTheme.of(context).accent4,
                         ),
@@ -981,10 +983,9 @@ class _EndingProcessWidgetState extends State<EndingProcessWidget> {
                         width: double.infinity,
                         height: 50.0,
                         decoration: BoxDecoration(
-                          color: Colors.white,
+                          color: Colors.black,
                           borderRadius: BorderRadius.circular(14.0),
                           border: Border.all(
-                            color: Color(0xFFE0E0E0),
                             width: 1.5,
                           ),
                         ),
@@ -996,7 +997,7 @@ class _EndingProcessWidgetState extends State<EndingProcessWidget> {
                             children: [
                               Icon(
                                 Icons.refresh_rounded,
-                                color: Color(0xFF888888),
+                                color: Colors.white,
                                 size: 18.0,
                               ),
                               Padding(
@@ -1014,7 +1015,7 @@ class _EndingProcessWidgetState extends State<EndingProcessWidget> {
                                                   .titleSmall
                                                   .fontStyle,
                                         ),
-                                        color: Color(0xFF666666),
+                                        color: Colors.white,
                                         fontSize: 15.0,
                                         letterSpacing: 0.0,
                                         fontWeight: FontWeight.w600,
