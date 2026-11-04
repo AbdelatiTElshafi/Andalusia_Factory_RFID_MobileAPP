@@ -283,16 +283,7 @@ class _RFIDScanningWidgetState extends State<RFIDScanningWidget> {
                           child: Container(
                             height: 220.0,
                             decoration: BoxDecoration(
-                              gradient: LinearGradient(
-                                colors: [
-                                  FlutterFlowTheme.of(context)
-                                      .secondaryBackground,
-                                  Color(0xFF121618)
-                                ],
-                                stops: [0.0, 1.0],
-                                begin: AlignmentDirectional(1.0, 1.0),
-                                end: AlignmentDirectional(-1.0, -1.0),
-                              ),
+                              color: Colors.black,
                               borderRadius: BorderRadius.circular(32.0),
                               shape: BoxShape.rectangle,
                               border: Border.all(

@@ -51,7 +51,7 @@ class _CreateInventoryWidgetState extends State<CreateInventoryWidget> {
       },
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: Color(0xFF0F1216),
+        backgroundColor: Colors.white,
         body: SingleChildScrollView(
           primary: false,
           child: Column(
@@ -134,7 +134,7 @@ class _CreateInventoryWidgetState extends State<CreateInventoryWidget> {
                               borderRadius: BorderRadius.circular(16.0),
                               shape: BoxShape.rectangle,
                               border: Border.all(
-                                color: Color(0xFF343E45),
+                                color: Color(0xFF444444),
                                 width: 1.0,
                               ),
                             ),
@@ -227,7 +227,7 @@ class _CreateInventoryWidgetState extends State<CreateInventoryWidget> {
                                         Container(
                                           height: 34.0,
                                           decoration: BoxDecoration(
-                                            color: Color(0xFF343E45),
+                                            color: Colors.black,
                                             borderRadius:
                                                 BorderRadius.circular(8.0),
                                             border: Border.all(
@@ -551,25 +551,26 @@ class _CreateInventoryWidgetState extends State<CreateInventoryWidget> {
                           iconPadding: EdgeInsetsDirectional.fromSTEB(
                               0.0, 0.0, 0.0, 0.0),
                           color: FlutterFlowTheme.of(context).primary,
-                          textStyle:
-                              FlutterFlowTheme.of(context).titleSmall.override(
-                                    font: GoogleFonts.interTight(
-                                      fontWeight: FlutterFlowTheme.of(context)
-                                          .titleSmall
-                                          .fontWeight,
-                                      fontStyle: FlutterFlowTheme.of(context)
-                                          .titleSmall
-                                          .fontStyle,
-                                    ),
-                                    color: Colors.white,
-                                    letterSpacing: 0.0,
-                                    fontWeight: FlutterFlowTheme.of(context)
-                                        .titleSmall
-                                        .fontWeight,
-                                    fontStyle: FlutterFlowTheme.of(context)
-                                        .titleSmall
-                                        .fontStyle,
-                                  ),
+                          textStyle: FlutterFlowTheme.of(context)
+                              .titleSmall
+                              .override(
+                                font: GoogleFonts.interTight(
+                                  fontWeight: FlutterFlowTheme.of(context)
+                                      .titleSmall
+                                      .fontWeight,
+                                  fontStyle: FlutterFlowTheme.of(context)
+                                      .titleSmall
+                                      .fontStyle,
+                                ),
+                                color: FlutterFlowTheme.of(context).onPrimary,
+                                letterSpacing: 0.0,
+                                fontWeight: FlutterFlowTheme.of(context)
+                                    .titleSmall
+                                    .fontWeight,
+                                fontStyle: FlutterFlowTheme.of(context)
+                                    .titleSmall
+                                    .fontStyle,
+                              ),
                           elevation: 0.0,
                           borderRadius: BorderRadius.circular(16.0),
                           disabledColor: FlutterFlowTheme.of(context).alternate,
@@ -579,11 +580,11 @@ class _CreateInventoryWidgetState extends State<CreateInventoryWidget> {
                       ),
                       Container(
                         decoration: BoxDecoration(
-                          color: Color(0xFF252B30),
+                          color: Colors.black,
                           borderRadius: BorderRadius.circular(20.0),
                           shape: BoxShape.rectangle,
                           border: Border.all(
-                            color: Color(0xFF343E45),
+                            color: Color(0xFF444444),
                             width: 1.0,
                           ),
                         ),
@@ -665,11 +666,11 @@ class _CreateInventoryWidgetState extends State<CreateInventoryWidget> {
                       ),
                       Container(
                         decoration: BoxDecoration(
-                          color: Color(0xFF161B1E),
+                          color: Colors.black,
                           borderRadius: BorderRadius.circular(16.0),
                           shape: BoxShape.rectangle,
                           border: Border.all(
-                            color: Color(0xFF343E45),
+                            color: Color(0xFF444444),
                             width: 1.0,
                           ),
                         ),

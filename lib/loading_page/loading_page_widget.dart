@@ -122,7 +122,7 @@ class _LoadingPageWidgetState extends State<LoadingPageWidget> {
                 children: [
                   Container(
                     decoration: BoxDecoration(
-                      color: Color(0x1AEE6306),
+                      color: Color(0x1AFFFFFF),
                       borderRadius: BorderRadius.circular(9999.0),
                       shape: BoxShape.rectangle,
                     ),

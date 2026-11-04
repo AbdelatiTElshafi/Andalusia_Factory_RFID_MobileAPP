@@ -1,3 +1,4 @@
+import '/flutter_flow/ff_builtin_enums.dart';
 import '/flutter_flow/flutter_flow_autocomplete_options_list.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
@@ -114,7 +115,7 @@ class _AddNewTagWidgetState extends State<AddNewTagWidget> {
         key: scaffoldKey,
         backgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
         appBar: AppBar(
-          backgroundColor: Color(0xFF1A1A1A),
+          backgroundColor: Colors.white,
           automaticallyImplyLeading: false,
           leading: Padding(
             padding: EdgeInsetsDirectional.fromSTEB(8.0, 0.0, 8.0, 0.0),
@@ -123,7 +124,7 @@ class _AddNewTagWidgetState extends State<AddNewTagWidget> {
               buttonSize: 44.0,
               icon: Icon(
                 Icons.arrow_back_rounded,
-                color: Colors.white,
+                color: Colors.black,
                 size: 24.0,
               ),
               onPressed: () async {
@@ -139,7 +140,7 @@ class _AddNewTagWidgetState extends State<AddNewTagWidget> {
                     fontStyle:
                         FlutterFlowTheme.of(context).titleLarge.fontStyle,
                   ),
-                  color: Colors.white,
+                  color: Colors.black,
                   fontSize: 20.0,
                   letterSpacing: 0.0,
                   fontWeight: FontWeight.bold,
@@ -165,18 +166,19 @@ class _AddNewTagWidgetState extends State<AddNewTagWidget> {
                     child: Container(
                       width: double.infinity,
                       decoration: BoxDecoration(
+                        color: Colors.black,
                         borderRadius: BorderRadius.circular(20.0),
                       ),
                       alignment: AlignmentDirectional(0.0, -1.0),
                       child: Padding(
-                        padding: EdgeInsets.all(16.0),
+                        padding: EdgeInsets.all(18.0),
                         child: Column(
                           mainAxisSize: MainAxisSize.max,
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Row(
                               mainAxisSize: MainAxisSize.max,
-                              mainAxisAlignment: MainAxisAlignment.center,
+                              mainAxisAlignment: MainAxisAlignment.start,
                               children: [
                                 Column(
                                   mainAxisSize: MainAxisSize.max,
@@ -194,7 +196,7 @@ class _AddNewTagWidgetState extends State<AddNewTagWidget> {
                                                       .titleMedium
                                                       .fontStyle,
                                             ),
-                                            color: Color(0xFF1A1A1A),
+                                            color: Colors.white,
                                             fontSize: 24.0,
                                             letterSpacing: 0.0,
                                             fontWeight: FontWeight.bold,
@@ -219,7 +221,7 @@ class _AddNewTagWidgetState extends State<AddNewTagWidget> {
                                                       .bodySmall
                                                       .fontStyle,
                                             ),
-                                            color: Color(0xFF888888),
+                                            color: Color(0xFFCCCCCC),
                                             fontSize: 12.0,
                                             letterSpacing: 0.0,
                                             fontWeight:
@@ -232,14 +234,14 @@ class _AddNewTagWidgetState extends State<AddNewTagWidget> {
                                                     .fontStyle,
                                           ),
                                     ),
-                                  ],
+                                  ].divide(SizedBox(height: 2.0)),
                                 ),
-                              ].divide(SizedBox(width: 10.0)),
+                              ].divide(SizedBox(width: 12.0)),
                             ),
                             Divider(
                               height: 1.0,
                               thickness: 1.0,
-                              color: Color(0xFFF0F0F0),
+                              color: Color(0xFF444444),
                             ),
                             Column(
                               mainAxisSize: MainAxisSize.max,
@@ -267,7 +269,7 @@ class _AddNewTagWidgetState extends State<AddNewTagWidget> {
                                                           .labelMedium
                                                           .fontStyle,
                                                 ),
-                                                color: Color(0xFF444444),
+                                                color: Colors.white,
                                                 fontSize: 13.0,
                                                 letterSpacing: 0.0,
                                                 fontWeight: FontWeight.w600,
@@ -291,7 +293,7 @@ class _AddNewTagWidgetState extends State<AddNewTagWidget> {
                                                           .labelMedium
                                                           .fontStyle,
                                                 ),
-                                                color: Color(0xFFFF6B00),
+                                                color: Colors.white,
                                                 fontSize: 13.0,
                                                 letterSpacing: 0.0,
                                                 fontWeight: FontWeight.bold,
@@ -301,11 +303,11 @@ class _AddNewTagWidgetState extends State<AddNewTagWidget> {
                                                         .fontStyle,
                                               ),
                                         ),
-                                      ].divide(SizedBox(width: 4.0)),
+                                      ].divide(SizedBox(width: 3.0)),
                                     ),
                                     Container(
                                       decoration: BoxDecoration(
-                                        color: Color(0xFFFFF3E0),
+                                        color: Color(0xFF222222),
                                         borderRadius:
                                             BorderRadius.circular(6.0),
                                       ),
@@ -313,11 +315,11 @@ class _AddNewTagWidgetState extends State<AddNewTagWidget> {
                                         padding: EdgeInsetsDirectional.fromSTEB(
                                             8.0, 4.0, 8.0, 4.0),
                                         child: Row(
-                                          mainAxisSize: MainAxisSize.min,
+                                          mainAxisSize: MainAxisSize.max,
                                           children: [
                                             Icon(
                                               Icons.wifi_tethering_rounded,
-                                              color: Color(0xFFFF6B00),
+                                              color: Colors.white,
                                               size: 12.0,
                                             ),
                                             Padding(
@@ -339,8 +341,7 @@ class _AddNewTagWidgetState extends State<AddNewTagWidget> {
                                                                     .labelSmall
                                                                     .fontStyle,
                                                           ),
-                                                          color:
-                                                              Color(0xFFFF6B00),
+                                                          color: Colors.white,
                                                           fontSize: 11.0,
                                                           letterSpacing: 0.0,
                                                           fontWeight:
@@ -353,7 +354,7 @@ class _AddNewTagWidgetState extends State<AddNewTagWidget> {
                                                         ),
                                               ),
                                             ),
-                                          ],
+                                          ].divide(SizedBox(width: 5.0)),
                                         ),
                                       ),
                                     ),
@@ -364,65 +365,56 @@ class _AddNewTagWidgetState extends State<AddNewTagWidget> {
                                     color: Color(0xFFFAFAFA),
                                     borderRadius: BorderRadius.circular(12.0),
                                     border: Border.all(
-                                      color: Color(0xFFE8E8E8),
+                                      color: Color(0xFF999999),
                                     ),
                                   ),
                                   child: Padding(
-                                    padding: EdgeInsets.all(2.0),
+                                    padding: EdgeInsets.all(6.0),
                                     child: Row(
                                       mainAxisSize: MainAxisSize.max,
                                       mainAxisAlignment:
                                           MainAxisAlignment.spaceBetween,
                                       children: [
                                         Expanded(
-                                          child: Container(
-                                            decoration: BoxDecoration(),
-                                            child: Padding(
-                                              padding: EdgeInsetsDirectional
-                                                  .fromSTEB(
-                                                      10.0, 0.0, 0.0, 0.0),
-                                              child: Text(
-                                                valueOrDefault<String>(
-                                                  FFAppState()
-                                                      .scannedTagList
-                                                      .firstOrNull,
-                                                  'Scan Tag....',
-                                                ),
-                                                style:
-                                                    FlutterFlowTheme.of(context)
-                                                        .bodyMedium
-                                                        .override(
-                                                          font: GoogleFonts
-                                                              .ibmPlexSansArabic(
-                                                            fontWeight:
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .bodyMedium
-                                                                    .fontWeight,
-                                                            fontStyle:
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .bodyMedium
-                                                                    .fontStyle,
-                                                          ),
-                                                          color:
-                                                              Color(0xFF1A1A1A),
-                                                          fontSize: 15.0,
-                                                          letterSpacing: 0.0,
-                                                          fontWeight:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .bodyMedium
-                                                                  .fontWeight,
-                                                          fontStyle:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .bodyMedium
-                                                                  .fontStyle,
-                                                        ),
-                                                overflow: TextOverflow.ellipsis,
-                                              ),
+                                          child: Text(
+                                            valueOrDefault<String>(
+                                              FFAppState()
+                                                  .scannedTagList
+                                                  .firstOrNull,
+                                              'Scan Tag....',
                                             ),
+                                            maxLines: 1,
+                                            style: FlutterFlowTheme.of(context)
+                                                .bodyMedium
+                                                .override(
+                                                  font: GoogleFonts
+                                                      .ibmPlexSansArabic(
+                                                    fontWeight:
+                                                        FlutterFlowTheme.of(
+                                                                context)
+                                                            .bodyMedium
+                                                            .fontWeight,
+                                                    fontStyle:
+                                                        FlutterFlowTheme.of(
+                                                                context)
+                                                            .bodyMedium
+                                                            .fontStyle,
+                                                  ),
+                                                  color: Colors.black,
+                                                  fontSize: 15.0,
+                                                  letterSpacing: 0.0,
+                                                  fontWeight:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .bodyMedium
+                                                          .fontWeight,
+                                                  fontStyle:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .bodyMedium
+                                                          .fontStyle,
+                                                ),
+                                            overflow: TextOverflow.ellipsis,
                                           ),
                                         ),
                                         Padding(
@@ -431,16 +423,19 @@ class _AddNewTagWidgetState extends State<AddNewTagWidget> {
                                             width: 44.0,
                                             height: 44.0,
                                             decoration: BoxDecoration(
-                                              color: Color(0xFFFF6B00),
+                                              color: Colors.white,
                                               borderRadius:
                                                   BorderRadius.circular(10.0),
+                                              border: Border.all(
+                                                color: Color(0xFF999999),
+                                              ),
                                             ),
                                             child: Align(
                                               alignment: AlignmentDirectional(
                                                   0.0, 0.0),
                                               child: Icon(
                                                 Icons.nfc_rounded,
-                                                color: Colors.white,
+                                                color: Colors.black,
                                                 size: 20.0,
                                               ),
                                             ),
@@ -450,120 +445,343 @@ class _AddNewTagWidgetState extends State<AddNewTagWidget> {
                                     ),
                                   ),
                                 ),
-                              ].divide(SizedBox(height: 6.0)),
-                            ),
-                            Column(
-                              mainAxisSize: MainAxisSize.max,
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Row(
+                                Column(
                                   mainAxisSize: MainAxisSize.max,
+                                  mainAxisAlignment:
+                                      (FFMainAxisAlignment.start).flutterValue,
+                                  crossAxisAlignment:
+                                      (FFCrossAxisAlignment.start).flutterValue,
+                                  textBaseline: TextBaseline.alphabetic,
                                   children: [
-                                    Text(
-                                      'Part Number',
-                                      style: FlutterFlowTheme.of(context)
-                                          .labelMedium
-                                          .override(
-                                            font: GoogleFonts.ibmPlexSansArabic(
-                                              fontWeight: FontWeight.w600,
-                                              fontStyle:
-                                                  FlutterFlowTheme.of(context)
-                                                      .labelMedium
-                                                      .fontStyle,
-                                            ),
-                                            color: Color(0xFF444444),
-                                            fontSize: 13.0,
-                                            letterSpacing: 0.0,
-                                            fontWeight: FontWeight.w600,
-                                            fontStyle:
-                                                FlutterFlowTheme.of(context)
-                                                    .labelMedium
-                                                    .fontStyle,
-                                          ),
+                                    Row(
+                                      mainAxisSize: MainAxisSize.max,
+                                      mainAxisAlignment:
+                                          (FFMainAxisAlignment.start)
+                                              .flutterValue,
+                                      crossAxisAlignment:
+                                          (FFCrossAxisAlignment.center)
+                                              .flutterValue,
+                                      textBaseline: TextBaseline.alphabetic,
+                                      children: [
+                                        Text(
+                                          'Part Number',
+                                          style: FlutterFlowTheme.of(context)
+                                              .labelMedium
+                                              .override(
+                                                font: GoogleFonts
+                                                    .ibmPlexSansArabic(
+                                                  fontWeight: FontWeight.w600,
+                                                  fontStyle:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .labelMedium
+                                                          .fontStyle,
+                                                ),
+                                                color: Colors.white,
+                                                fontSize: 13.0,
+                                                letterSpacing: 0.0,
+                                                fontWeight: FontWeight.w600,
+                                                fontStyle:
+                                                    FlutterFlowTheme.of(context)
+                                                        .labelMedium
+                                                        .fontStyle,
+                                              ),
+                                        ),
+                                        Text(
+                                          '*',
+                                          style: FlutterFlowTheme.of(context)
+                                              .labelMedium
+                                              .override(
+                                                font: GoogleFonts
+                                                    .ibmPlexSansArabic(
+                                                  fontWeight: FontWeight.bold,
+                                                  fontStyle:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .labelMedium
+                                                          .fontStyle,
+                                                ),
+                                                color: Colors.white,
+                                                fontSize: 13.0,
+                                                letterSpacing: 0.0,
+                                                fontWeight: FontWeight.bold,
+                                                fontStyle:
+                                                    FlutterFlowTheme.of(context)
+                                                        .labelMedium
+                                                        .fontStyle,
+                                              ),
+                                        ),
+                                      ].divide(SizedBox(width: 3.0)),
                                     ),
-                                    Text(
-                                      '*',
-                                      style: FlutterFlowTheme.of(context)
-                                          .labelMedium
-                                          .override(
-                                            font: GoogleFonts.ibmPlexSansArabic(
-                                              fontWeight: FontWeight.bold,
-                                              fontStyle:
-                                                  FlutterFlowTheme.of(context)
-                                                      .labelMedium
-                                                      .fontStyle,
-                                            ),
-                                            color: Color(0xFFFF6B00),
-                                            fontSize: 13.0,
-                                            letterSpacing: 0.0,
-                                            fontWeight: FontWeight.bold,
-                                            fontStyle:
-                                                FlutterFlowTheme.of(context)
-                                                    .labelMedium
-                                                    .fontStyle,
-                                          ),
-                                    ),
-                                  ].divide(SizedBox(width: 4.0)),
-                                ),
-                                Autocomplete<String>(
-                                  initialValue: TextEditingValue(),
-                                  optionsBuilder: (textEditingValue) {
-                                    if (textEditingValue.text == '') {
-                                      return const Iterable<String>.empty();
-                                    }
-                                    return _model.partsno.where((option) {
-                                      final lowercaseOption =
-                                          option.toLowerCase();
-                                      return lowercaseOption.contains(
-                                          textEditingValue.text.toLowerCase());
-                                    });
-                                  },
-                                  optionsViewBuilder:
-                                      (context, onSelected, options) {
-                                    return AutocompleteOptionsList(
-                                      textFieldKey: _model.partNOTextKey,
-                                      textController:
-                                          _model.partNOTextTextController!,
-                                      options: options.toList(),
-                                      onSelected: onSelected,
-                                      textStyle: TextStyle(),
-                                      textHighlightStyle: TextStyle(),
-                                      elevation: 4.0,
-                                      optionBackgroundColor:
-                                          FlutterFlowTheme.of(context)
-                                              .primaryBackground,
-                                      optionHighlightColor:
-                                          FlutterFlowTheme.of(context)
-                                              .secondaryBackground,
-                                      maxHeight: 200.0,
-                                    );
-                                  },
-                                  onSelected: (String selection) {
-                                    safeSetState(() => _model
-                                        .partNOTextSelectedOption = selection);
-                                    FocusScope.of(context).unfocus();
-                                  },
-                                  fieldViewBuilder: (
-                                    context,
-                                    textEditingController,
-                                    focusNode,
-                                    onEditingComplete,
-                                  ) {
-                                    _model.partNOTextFocusNode = focusNode;
+                                    Autocomplete<String>(
+                                      initialValue: TextEditingValue(),
+                                      optionsBuilder: (textEditingValue) {
+                                        if (textEditingValue.text == '') {
+                                          return const Iterable<String>.empty();
+                                        }
+                                        return <String>[].where((option) {
+                                          final lowercaseOption =
+                                              option.toLowerCase();
+                                          return lowercaseOption.contains(
+                                              textEditingValue.text
+                                                  .toLowerCase());
+                                        });
+                                      },
+                                      optionsViewBuilder:
+                                          (context, onSelected, options) {
+                                        return AutocompleteOptionsList(
+                                          textFieldKey: _model.partNOTextKey,
+                                          textController:
+                                              _model.partNOTextTextController!,
+                                          options: options.toList(),
+                                          onSelected: onSelected,
+                                          textStyle: TextStyle(),
+                                          textHighlightStyle: TextStyle(),
+                                          elevation: 4.0,
+                                          optionBackgroundColor:
+                                              FlutterFlowTheme.of(context)
+                                                  .primaryBackground,
+                                          optionHighlightColor:
+                                              FlutterFlowTheme.of(context)
+                                                  .secondaryBackground,
+                                          maxHeight: 200.0,
+                                        );
+                                      },
+                                      onSelected: (String selection) {
+                                        safeSetState(() =>
+                                            _model.partNOTextSelectedOption =
+                                                selection);
+                                        FocusScope.of(context).unfocus();
+                                      },
+                                      fieldViewBuilder: (
+                                        context,
+                                        textEditingController,
+                                        focusNode,
+                                        onEditingComplete,
+                                      ) {
+                                        _model.partNOTextFocusNode = focusNode;
 
-                                    _model.partNOTextTextController =
-                                        textEditingController;
-                                    return TextFormField(
-                                      key: _model.partNOTextKey,
-                                      controller: textEditingController,
-                                      focusNode: focusNode,
-                                      onEditingComplete: onEditingComplete,
+                                        _model.partNOTextTextController =
+                                            textEditingController;
+                                        return TextFormField(
+                                          key: _model.partNOTextKey,
+                                          controller: textEditingController,
+                                          focusNode: focusNode,
+                                          onEditingComplete: onEditingComplete,
+                                          onChanged: (_) =>
+                                              EasyDebounce.debounce(
+                                            '_model.partNOTextTextController',
+                                            Duration(milliseconds: 100),
+                                            () => safeSetState(() {}),
+                                          ),
+                                          enabled: FFAppState().scannedTagId != '',
+                                          textCapitalization:
+                                              TextCapitalization.sentences,
+                                          textInputAction: TextInputAction.next,
+                                          obscureText: false,
+                                          decoration: InputDecoration(
+                                            hintText: 'e.g. GN65190-GT',
+                                            hintStyle:
+                                                FlutterFlowTheme.of(context)
+                                                    .bodyMedium
+                                                    .override(
+                                                      font: GoogleFonts
+                                                          .ibmPlexSansArabic(
+                                                        fontWeight:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodyMedium
+                                                                .fontWeight,
+                                                        fontStyle:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodyMedium
+                                                                .fontStyle,
+                                                      ),
+                                                      color: Color(0xFF999999),
+                                                      fontSize: 14.0,
+                                                      letterSpacing: 0.0,
+                                                      fontWeight:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .bodyMedium
+                                                              .fontWeight,
+                                                      fontStyle:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .bodyMedium
+                                                              .fontStyle,
+                                                    ),
+                                            enabledBorder: OutlineInputBorder(
+                                              borderSide: BorderSide(
+                                                color: Color(0xFF666666),
+                                                width: 1.5,
+                                              ),
+                                              borderRadius:
+                                                  BorderRadius.circular(12.0),
+                                            ),
+                                            focusedBorder: OutlineInputBorder(
+                                              borderSide: BorderSide(
+                                                color: Colors.white,
+                                                width: 1.5,
+                                              ),
+                                              borderRadius:
+                                                  BorderRadius.circular(12.0),
+                                            ),
+                                            errorBorder: OutlineInputBorder(
+                                              borderSide: BorderSide(
+                                                color: Color(0xFFFF3B30),
+                                                width: 1.5,
+                                              ),
+                                              borderRadius:
+                                                  BorderRadius.circular(12.0),
+                                            ),
+                                            focusedErrorBorder:
+                                                OutlineInputBorder(
+                                              borderSide: BorderSide(
+                                                color: Color(0xFFFF3B30),
+                                                width: 1.5,
+                                              ),
+                                              borderRadius:
+                                                  BorderRadius.circular(12.0),
+                                            ),
+                                            filled: true,
+                                            fillColor: Color(0xFF222222),
+                                            contentPadding:
+                                                EdgeInsetsDirectional.fromSTEB(
+                                                    14.0, 14.0, 14.0, 14.0),
+                                            suffixIcon: Icon(
+                                              Icons.close_rounded,
+                                              color: Color(0xFFCCCCCC),
+                                              size: 18.0,
+                                            ),
+                                          ),
+                                          style: FlutterFlowTheme.of(context)
+                                              .bodyMedium
+                                              .override(
+                                                font: GoogleFonts
+                                                    .ibmPlexSansArabic(
+                                                  fontWeight:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .bodyMedium
+                                                          .fontWeight,
+                                                  fontStyle:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .bodyMedium
+                                                          .fontStyle,
+                                                ),
+                                                color: Colors.white,
+                                                fontSize: 15.0,
+                                                letterSpacing: 0.0,
+                                                fontWeight:
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodyMedium
+                                                        .fontWeight,
+                                                fontStyle:
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodyMedium
+                                                        .fontStyle,
+                                              ),
+                                          validator: _model
+                                              .partNOTextTextControllerValidator
+                                              .asValidator(context),
+                                          inputFormatters: [
+                                            if (!isAndroid && !isiOS)
+                                              TextInputFormatter.withFunction(
+                                                  (oldValue, newValue) {
+                                                return TextEditingValue(
+                                                  selection: newValue.selection,
+                                                  text: newValue.text
+                                                      .toCapitalization(
+                                                          TextCapitalization
+                                                              .sentences),
+                                                );
+                                              }),
+                                          ],
+                                        );
+                                      },
+                                    ),
+                                  ].divide(SizedBox(height: 8.0)),
+                                ),
+                                Column(
+                                  mainAxisSize: MainAxisSize.max,
+                                  mainAxisAlignment:
+                                      (FFMainAxisAlignment.start).flutterValue,
+                                  crossAxisAlignment:
+                                      (FFCrossAxisAlignment.start).flutterValue,
+                                  textBaseline: TextBaseline.alphabetic,
+                                  children: [
+                                    Row(
+                                      mainAxisSize: MainAxisSize.max,
+                                      mainAxisAlignment:
+                                          (FFMainAxisAlignment.start)
+                                              .flutterValue,
+                                      crossAxisAlignment:
+                                          (FFCrossAxisAlignment.center)
+                                              .flutterValue,
+                                      textBaseline: TextBaseline.alphabetic,
+                                      children: [
+                                        Text(
+                                          'Name / Description',
+                                          style: FlutterFlowTheme.of(context)
+                                              .labelMedium
+                                              .override(
+                                                font: GoogleFonts
+                                                    .ibmPlexSansArabic(
+                                                  fontWeight: FontWeight.w600,
+                                                  fontStyle:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .labelMedium
+                                                          .fontStyle,
+                                                ),
+                                                color: Colors.white,
+                                                fontSize: 13.0,
+                                                letterSpacing: 0.0,
+                                                fontWeight: FontWeight.w600,
+                                                fontStyle:
+                                                    FlutterFlowTheme.of(context)
+                                                        .labelMedium
+                                                        .fontStyle,
+                                              ),
+                                        ),
+                                        Text(
+                                          '*',
+                                          style: FlutterFlowTheme.of(context)
+                                              .labelMedium
+                                              .override(
+                                                font: GoogleFonts
+                                                    .ibmPlexSansArabic(
+                                                  fontWeight: FontWeight.bold,
+                                                  fontStyle:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .labelMedium
+                                                          .fontStyle,
+                                                ),
+                                                color: Colors.white,
+                                                fontSize: 13.0,
+                                                letterSpacing: 0.0,
+                                                fontWeight: FontWeight.bold,
+                                                fontStyle:
+                                                    FlutterFlowTheme.of(context)
+                                                        .labelMedium
+                                                        .fontStyle,
+                                              ),
+                                        ),
+                                      ].divide(SizedBox(width: 3.0)),
+                                    ),
+                                    TextFormField(
+                                      controller:
+                                          _model.descTextFieldTextController,
+                                      focusNode: _model.descTextFieldFocusNode,
                                       onChanged: (_) => EasyDebounce.debounce(
-                                        '_model.partNOTextTextController',
-                                        Duration(milliseconds: 100),
+                                        '_model.descTextFieldTextController',
+                                        Duration(milliseconds: 2000),
                                         () => safeSetState(() {}),
                                       ),
-                                      autofocus: false,
                                       enabled:
                                           FFAppState().scannedTagId != '',
                                       textCapitalization:
@@ -571,7 +789,7 @@ class _AddNewTagWidgetState extends State<AddNewTagWidget> {
                                       textInputAction: TextInputAction.next,
                                       obscureText: false,
                                       decoration: InputDecoration(
-                                        hintText: 'e.g. GN65190-GT',
+                                        hintText: 'e.g. Warehouse pallet A1',
                                         hintStyle: FlutterFlowTheme.of(context)
                                             .bodyMedium
                                             .override(
@@ -586,7 +804,7 @@ class _AddNewTagWidgetState extends State<AddNewTagWidget> {
                                                         .bodyMedium
                                                         .fontStyle,
                                               ),
-                                              color: Color(0xFFBBBBBB),
+                                              color: Color(0xFF999999),
                                               fontSize: 14.0,
                                               letterSpacing: 0.0,
                                               fontWeight:
@@ -600,7 +818,7 @@ class _AddNewTagWidgetState extends State<AddNewTagWidget> {
                                             ),
                                         enabledBorder: OutlineInputBorder(
                                           borderSide: BorderSide(
-                                            color: Color(0xFFE8E8E8),
+                                            color: Color(0xFF666666),
                                             width: 1.5,
                                           ),
                                           borderRadius:
@@ -608,7 +826,7 @@ class _AddNewTagWidgetState extends State<AddNewTagWidget> {
                                         ),
                                         focusedBorder: OutlineInputBorder(
                                           borderSide: BorderSide(
-                                            color: Color(0xFFFF6B00),
+                                            color: Colors.white,
                                             width: 1.5,
                                           ),
                                           borderRadius:
@@ -631,10 +849,10 @@ class _AddNewTagWidgetState extends State<AddNewTagWidget> {
                                               BorderRadius.circular(12.0),
                                         ),
                                         filled: true,
-                                        fillColor: Color(0xFFFAFAFA),
+                                        fillColor: Color(0xFF222222),
                                         contentPadding:
                                             EdgeInsetsDirectional.fromSTEB(
-                                                16.0, 14.0, 16.0, 14.0),
+                                                14.0, 14.0, 14.0, 14.0),
                                         suffixIcon: Icon(
                                           Icons.close_rounded,
                                           color: Color(0xFFCCCCCC),
@@ -654,7 +872,7 @@ class _AddNewTagWidgetState extends State<AddNewTagWidget> {
                                                       .bodyMedium
                                                       .fontStyle,
                                             ),
-                                            color: Color(0xFF1A1A1A),
+                                            color: Colors.white,
                                             fontSize: 15.0,
                                             letterSpacing: 0.0,
                                             fontWeight:
@@ -667,7 +885,7 @@ class _AddNewTagWidgetState extends State<AddNewTagWidget> {
                                                     .fontStyle,
                                           ),
                                       validator: _model
-                                          .partNOTextTextControllerValidator
+                                          .descTextFieldTextControllerValidator
                                           .asValidator(context),
                                       inputFormatters: [
                                         if (!isAndroid && !isiOS)
@@ -682,85 +900,182 @@ class _AddNewTagWidgetState extends State<AddNewTagWidget> {
                                             );
                                           }),
                                       ],
-                                    );
-                                  },
+                                    ),
+                                  ].divide(SizedBox(height: 8.0)),
                                 ),
-                              ].divide(SizedBox(height: 6.0)),
-                            ),
-                            Column(
-                              mainAxisSize: MainAxisSize.max,
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Row(
+                                Column(
                                   mainAxisSize: MainAxisSize.max,
+                                  mainAxisAlignment:
+                                      (FFMainAxisAlignment.start).flutterValue,
+                                  crossAxisAlignment:
+                                      (FFCrossAxisAlignment.start).flutterValue,
+                                  textBaseline: TextBaseline.alphabetic,
                                   children: [
-                                    Text(
-                                      'Name / Description',
-                                      style: FlutterFlowTheme.of(context)
-                                          .labelMedium
-                                          .override(
-                                            font: GoogleFonts.ibmPlexSansArabic(
-                                              fontWeight: FontWeight.w600,
+                                    Row(
+                                      mainAxisSize: MainAxisSize.max,
+                                      mainAxisAlignment:
+                                          (FFMainAxisAlignment.start)
+                                              .flutterValue,
+                                      crossAxisAlignment:
+                                          (FFCrossAxisAlignment.center)
+                                              .flutterValue,
+                                      textBaseline: TextBaseline.alphabetic,
+                                      children: [
+                                        Text(
+                                          'Serial Number',
+                                          style: FlutterFlowTheme.of(context)
+                                              .labelMedium
+                                              .override(
+                                                font: GoogleFonts
+                                                    .ibmPlexSansArabic(
+                                                  fontWeight: FontWeight.w600,
+                                                  fontStyle:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .labelMedium
+                                                          .fontStyle,
+                                                ),
+                                                color: Colors.white,
+                                                fontSize: 13.0,
+                                                letterSpacing: 0.0,
+                                                fontWeight: FontWeight.w600,
+                                                fontStyle:
+                                                    FlutterFlowTheme.of(context)
+                                                        .labelMedium
+                                                        .fontStyle,
+                                              ),
+                                        ),
+                                        Text(
+                                          '*',
+                                          style: FlutterFlowTheme.of(context)
+                                              .labelMedium
+                                              .override(
+                                                font: GoogleFonts
+                                                    .ibmPlexSansArabic(
+                                                  fontWeight: FontWeight.bold,
+                                                  fontStyle:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .labelMedium
+                                                          .fontStyle,
+                                                ),
+                                                color: Colors.white,
+                                                fontSize: 13.0,
+                                                letterSpacing: 0.0,
+                                                fontWeight: FontWeight.bold,
+                                                fontStyle:
+                                                    FlutterFlowTheme.of(context)
+                                                        .labelMedium
+                                                        .fontStyle,
+                                              ),
+                                        ),
+                                      ].divide(SizedBox(width: 3.0)),
+                                    ),
+                                    TextFormField(
+                                      controller:
+                                          _model.serialTextFieldTextController,
+                                      focusNode:
+                                          _model.serialTextFieldFocusNode,
+                                      onChanged: (_) => EasyDebounce.debounce(
+                                        '_model.serialTextFieldTextController',
+                                        Duration(milliseconds: 2000),
+                                        () async {
+                                          safeSetState(() {});
+                                        },
+                                      ),
+                                      enabled:
+                                          FFAppState().scannedTagId != '',
+                                      textCapitalization:
+                                          TextCapitalization.characters,
+                                      textInputAction: TextInputAction.next,
+                                      obscureText: false,
+                                      decoration: InputDecoration(
+                                        hintText: 'e.g. SN-2024-00123',
+                                        hintStyle: FlutterFlowTheme.of(context)
+                                            .bodyMedium
+                                            .override(
+                                              font:
+                                                  GoogleFonts.ibmPlexSansArabic(
+                                                fontWeight:
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodyMedium
+                                                        .fontWeight,
+                                                fontStyle:
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodyMedium
+                                                        .fontStyle,
+                                              ),
+                                              color: Color(0xFF999999),
+                                              fontSize: 14.0,
+                                              letterSpacing: 0.0,
+                                              fontWeight:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyMedium
+                                                      .fontWeight,
                                               fontStyle:
                                                   FlutterFlowTheme.of(context)
-                                                      .labelMedium
+                                                      .bodyMedium
                                                       .fontStyle,
                                             ),
-                                            color: Color(0xFF444444),
-                                            fontSize: 13.0,
-                                            letterSpacing: 0.0,
-                                            fontWeight: FontWeight.w600,
-                                            fontStyle:
-                                                FlutterFlowTheme.of(context)
-                                                    .labelMedium
-                                                    .fontStyle,
+                                        enabledBorder: OutlineInputBorder(
+                                          borderSide: BorderSide(
+                                            color: Color(0xFF666666),
+                                            width: 1.5,
                                           ),
-                                    ),
-                                    Text(
-                                      '*',
+                                          borderRadius:
+                                              BorderRadius.circular(12.0),
+                                        ),
+                                        focusedBorder: OutlineInputBorder(
+                                          borderSide: BorderSide(
+                                            color: Colors.white,
+                                            width: 1.5,
+                                          ),
+                                          borderRadius:
+                                              BorderRadius.circular(12.0),
+                                        ),
+                                        errorBorder: OutlineInputBorder(
+                                          borderSide: BorderSide(
+                                            color: Color(0xFFFF3B30),
+                                            width: 1.5,
+                                          ),
+                                          borderRadius:
+                                              BorderRadius.circular(12.0),
+                                        ),
+                                        focusedErrorBorder: OutlineInputBorder(
+                                          borderSide: BorderSide(
+                                            color: Color(0xFFFF3B30),
+                                            width: 1.5,
+                                          ),
+                                          borderRadius:
+                                              BorderRadius.circular(12.0),
+                                        ),
+                                        filled: true,
+                                        fillColor: Color(0xFF222222),
+                                        contentPadding:
+                                            EdgeInsetsDirectional.fromSTEB(
+                                                14.0, 14.0, 14.0, 14.0),
+                                        suffixIcon: Icon(
+                                          Icons.close_rounded,
+                                          color: Color(0xFFCCCCCC),
+                                          size: 18.0,
+                                        ),
+                                      ),
                                       style: FlutterFlowTheme.of(context)
-                                          .labelMedium
+                                          .bodyMedium
                                           .override(
                                             font: GoogleFonts.ibmPlexSansArabic(
-                                              fontWeight: FontWeight.bold,
+                                              fontWeight:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyMedium
+                                                      .fontWeight,
                                               fontStyle:
                                                   FlutterFlowTheme.of(context)
-                                                      .labelMedium
+                                                      .bodyMedium
                                                       .fontStyle,
                                             ),
-                                            color: Color(0xFFFF6B00),
-                                            fontSize: 13.0,
+                                            color: Colors.white,
+                                            fontSize: 15.0,
                                             letterSpacing: 0.0,
-                                            fontWeight: FontWeight.bold,
-                                            fontStyle:
-                                                FlutterFlowTheme.of(context)
-                                                    .labelMedium
-                                                    .fontStyle,
-                                          ),
-                                    ),
-                                  ].divide(SizedBox(width: 4.0)),
-                                ),
-                                TextFormField(
-                                  controller:
-                                      _model.descTextFieldTextController,
-                                  focusNode: _model.descTextFieldFocusNode,
-                                  onChanged: (_) => EasyDebounce.debounce(
-                                    '_model.descTextFieldTextController',
-                                    Duration(milliseconds: 2000),
-                                    () => safeSetState(() {}),
-                                  ),
-                                  autofocus: false,
-                                  enabled: FFAppState().scannedTagId != '',
-                                  textCapitalization:
-                                      TextCapitalization.sentences,
-                                  textInputAction: TextInputAction.next,
-                                  obscureText: false,
-                                  decoration: InputDecoration(
-                                    hintText: 'e.g. Warehouse Pallet A1',
-                                    hintStyle: FlutterFlowTheme.of(context)
-                                        .bodyMedium
-                                        .override(
-                                          font: GoogleFonts.ibmPlexSansArabic(
                                             fontWeight:
                                                 FlutterFlowTheme.of(context)
                                                     .bodyMedium
@@ -770,274 +1085,28 @@ class _AddNewTagWidgetState extends State<AddNewTagWidget> {
                                                     .bodyMedium
                                                     .fontStyle,
                                           ),
-                                          color: Color(0xFFBBBBBB),
-                                          fontSize: 14.0,
-                                          letterSpacing: 0.0,
-                                          fontWeight:
-                                              FlutterFlowTheme.of(context)
-                                                  .bodyMedium
-                                                  .fontWeight,
-                                          fontStyle:
-                                              FlutterFlowTheme.of(context)
-                                                  .bodyMedium
-                                                  .fontStyle,
-                                        ),
-                                    enabledBorder: OutlineInputBorder(
-                                      borderSide: BorderSide(
-                                        color: Color(0xFFE8E8E8),
-                                        width: 1.5,
-                                      ),
-                                      borderRadius: BorderRadius.circular(12.0),
+                                      validator: _model
+                                          .serialTextFieldTextControllerValidator
+                                          .asValidator(context),
+                                      inputFormatters: [
+                                        if (!isAndroid && !isiOS)
+                                          TextInputFormatter.withFunction(
+                                              (oldValue, newValue) {
+                                            return TextEditingValue(
+                                              selection: newValue.selection,
+                                              text: newValue.text
+                                                  .toCapitalization(
+                                                      TextCapitalization
+                                                          .characters),
+                                            );
+                                          }),
+                                      ],
                                     ),
-                                    focusedBorder: OutlineInputBorder(
-                                      borderSide: BorderSide(
-                                        color: Color(0xFFFF6B00),
-                                        width: 1.5,
-                                      ),
-                                      borderRadius: BorderRadius.circular(12.0),
-                                    ),
-                                    errorBorder: OutlineInputBorder(
-                                      borderSide: BorderSide(
-                                        color: Color(0xFFFF3B30),
-                                        width: 1.5,
-                                      ),
-                                      borderRadius: BorderRadius.circular(12.0),
-                                    ),
-                                    focusedErrorBorder: OutlineInputBorder(
-                                      borderSide: BorderSide(
-                                        color: Color(0xFFFF3B30),
-                                        width: 1.5,
-                                      ),
-                                      borderRadius: BorderRadius.circular(12.0),
-                                    ),
-                                    filled: true,
-                                    fillColor: Color(0xFFFAFAFA),
-                                    contentPadding:
-                                        EdgeInsetsDirectional.fromSTEB(
-                                            16.0, 14.0, 16.0, 14.0),
-                                    suffixIcon: Icon(
-                                      Icons.close_rounded,
-                                      color: Color(0xFFCCCCCC),
-                                      size: 18.0,
-                                    ),
-                                  ),
-                                  style: FlutterFlowTheme.of(context)
-                                      .bodyMedium
-                                      .override(
-                                        font: GoogleFonts.ibmPlexSansArabic(
-                                          fontWeight:
-                                              FlutterFlowTheme.of(context)
-                                                  .bodyMedium
-                                                  .fontWeight,
-                                          fontStyle:
-                                              FlutterFlowTheme.of(context)
-                                                  .bodyMedium
-                                                  .fontStyle,
-                                        ),
-                                        color: Color(0xFF1A1A1A),
-                                        fontSize: 15.0,
-                                        letterSpacing: 0.0,
-                                        fontWeight: FlutterFlowTheme.of(context)
-                                            .bodyMedium
-                                            .fontWeight,
-                                        fontStyle: FlutterFlowTheme.of(context)
-                                            .bodyMedium
-                                            .fontStyle,
-                                      ),
-                                  validator: _model
-                                      .descTextFieldTextControllerValidator
-                                      .asValidator(context),
-                                  inputFormatters: [
-                                    if (!isAndroid && !isiOS)
-                                      TextInputFormatter.withFunction(
-                                          (oldValue, newValue) {
-                                        return TextEditingValue(
-                                          selection: newValue.selection,
-                                          text: newValue.text.toCapitalization(
-                                              TextCapitalization.sentences),
-                                        );
-                                      }),
-                                  ],
+                                  ].divide(SizedBox(height: 8.0)),
                                 ),
-                              ].divide(SizedBox(height: 6.0)),
+                              ].divide(SizedBox(height: 18.0)),
                             ),
-                            Column(
-                              mainAxisSize: MainAxisSize.max,
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Row(
-                                  mainAxisSize: MainAxisSize.max,
-                                  children: [
-                                    Text(
-                                      'Serial Number',
-                                      style: FlutterFlowTheme.of(context)
-                                          .labelMedium
-                                          .override(
-                                            font: GoogleFonts.ibmPlexSansArabic(
-                                              fontWeight: FontWeight.w600,
-                                              fontStyle:
-                                                  FlutterFlowTheme.of(context)
-                                                      .labelMedium
-                                                      .fontStyle,
-                                            ),
-                                            color: Color(0xFF444444),
-                                            fontSize: 13.0,
-                                            letterSpacing: 0.0,
-                                            fontWeight: FontWeight.w600,
-                                            fontStyle:
-                                                FlutterFlowTheme.of(context)
-                                                    .labelMedium
-                                                    .fontStyle,
-                                          ),
-                                    ),
-                                    Text(
-                                      '*',
-                                      style: FlutterFlowTheme.of(context)
-                                          .labelMedium
-                                          .override(
-                                            font: GoogleFonts.ibmPlexSansArabic(
-                                              fontWeight: FontWeight.bold,
-                                              fontStyle:
-                                                  FlutterFlowTheme.of(context)
-                                                      .labelMedium
-                                                      .fontStyle,
-                                            ),
-                                            color: Color(0xFFFF6B00),
-                                            fontSize: 13.0,
-                                            letterSpacing: 0.0,
-                                            fontWeight: FontWeight.bold,
-                                            fontStyle:
-                                                FlutterFlowTheme.of(context)
-                                                    .labelMedium
-                                                    .fontStyle,
-                                          ),
-                                    ),
-                                  ].divide(SizedBox(width: 4.0)),
-                                ),
-                                TextFormField(
-                                  controller:
-                                      _model.serialTextFieldTextController,
-                                  focusNode: _model.serialTextFieldFocusNode,
-                                  onChanged: (_) => EasyDebounce.debounce(
-                                    '_model.serialTextFieldTextController',
-                                    Duration(milliseconds: 2000),
-                                    () async {
-                                      safeSetState(() {});
-                                    },
-                                  ),
-                                  autofocus: false,
-                                  enabled: FFAppState().scannedTagId != '',
-                                  textCapitalization:
-                                      TextCapitalization.characters,
-                                  textInputAction: TextInputAction.next,
-                                  obscureText: false,
-                                  decoration: InputDecoration(
-                                    hintText: 'e.g. SN-2024-00123',
-                                    hintStyle: FlutterFlowTheme.of(context)
-                                        .bodyMedium
-                                        .override(
-                                          font: GoogleFonts.ibmPlexSansArabic(
-                                            fontWeight:
-                                                FlutterFlowTheme.of(context)
-                                                    .bodyMedium
-                                                    .fontWeight,
-                                            fontStyle:
-                                                FlutterFlowTheme.of(context)
-                                                    .bodyMedium
-                                                    .fontStyle,
-                                          ),
-                                          color: Color(0xFFBBBBBB),
-                                          fontSize: 14.0,
-                                          letterSpacing: 0.0,
-                                          fontWeight:
-                                              FlutterFlowTheme.of(context)
-                                                  .bodyMedium
-                                                  .fontWeight,
-                                          fontStyle:
-                                              FlutterFlowTheme.of(context)
-                                                  .bodyMedium
-                                                  .fontStyle,
-                                        ),
-                                    enabledBorder: OutlineInputBorder(
-                                      borderSide: BorderSide(
-                                        color: Color(0xFFE8E8E8),
-                                        width: 1.5,
-                                      ),
-                                      borderRadius: BorderRadius.circular(12.0),
-                                    ),
-                                    focusedBorder: OutlineInputBorder(
-                                      borderSide: BorderSide(
-                                        color: Color(0xFFFF6B00),
-                                        width: 1.5,
-                                      ),
-                                      borderRadius: BorderRadius.circular(12.0),
-                                    ),
-                                    errorBorder: OutlineInputBorder(
-                                      borderSide: BorderSide(
-                                        color: Color(0xFFFF3B30),
-                                        width: 1.5,
-                                      ),
-                                      borderRadius: BorderRadius.circular(12.0),
-                                    ),
-                                    focusedErrorBorder: OutlineInputBorder(
-                                      borderSide: BorderSide(
-                                        color: Color(0xFFFF3B30),
-                                        width: 1.5,
-                                      ),
-                                      borderRadius: BorderRadius.circular(12.0),
-                                    ),
-                                    filled: true,
-                                    fillColor: Color(0xFFFAFAFA),
-                                    contentPadding:
-                                        EdgeInsetsDirectional.fromSTEB(
-                                            16.0, 14.0, 16.0, 14.0),
-                                    suffixIcon: Icon(
-                                      Icons.close_rounded,
-                                      color: Color(0xFFCCCCCC),
-                                      size: 18.0,
-                                    ),
-                                  ),
-                                  style: FlutterFlowTheme.of(context)
-                                      .bodyMedium
-                                      .override(
-                                        font: GoogleFonts.ibmPlexSansArabic(
-                                          fontWeight:
-                                              FlutterFlowTheme.of(context)
-                                                  .bodyMedium
-                                                  .fontWeight,
-                                          fontStyle:
-                                              FlutterFlowTheme.of(context)
-                                                  .bodyMedium
-                                                  .fontStyle,
-                                        ),
-                                        color: Color(0xFF1A1A1A),
-                                        fontSize: 15.0,
-                                        letterSpacing: 0.0,
-                                        fontWeight: FlutterFlowTheme.of(context)
-                                            .bodyMedium
-                                            .fontWeight,
-                                        fontStyle: FlutterFlowTheme.of(context)
-                                            .bodyMedium
-                                            .fontStyle,
-                                      ),
-                                  validator: _model
-                                      .serialTextFieldTextControllerValidator
-                                      .asValidator(context),
-                                  inputFormatters: [
-                                    if (!isAndroid && !isiOS)
-                                      TextInputFormatter.withFunction(
-                                          (oldValue, newValue) {
-                                        return TextEditingValue(
-                                          selection: newValue.selection,
-                                          text: newValue.text.toCapitalization(
-                                              TextCapitalization.characters),
-                                        );
-                                      }),
-                                  ],
-                                ),
-                              ].divide(SizedBox(height: 6.0)),
-                            ),
-                          ].divide(SizedBox(height: 20.0)),
+                          ].divide(SizedBox(height: 18.0)),
                         ),
                       ),
                     ),
@@ -1048,38 +1117,59 @@ class _AddNewTagWidgetState extends State<AddNewTagWidget> {
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(14.0),
                     ),
-                    child: Padding(
-                      padding:
-                          EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
-                      child: FFButtonWidget(
-                        onPressed: ((FFAppState().scannedTagId == '') ||
-                                (_model.partNOTextTextController.text ==
-                                        '') ||
-                                ((_model.descTextFieldFocusNode?.hasFocus ??
-                                        false) ==
-                                    null) ||
-                                ((_model.serialTextFieldFocusNode?.hasFocus ??
-                                        false) ==
-                                    null))
-                            ? null
-                            : () async {
-                                _model.checktag =
-                                    await actions.checkRfidTagExists(
+                    child: FFButtonWidget(
+                      onPressed: ((FFAppState().scannedTagId == '') ||
+                              (_model.partNOTextTextController.text == '') ||
+                              ((_model.descTextFieldFocusNode?.hasFocus ??
+                                      false) ==
+                                  null) ||
+                              ((_model.serialTextFieldFocusNode?.hasFocus ??
+                                      false) ==
+                                  null))
+                          ? null
+                          : () async {
+                              _model.checktag =
+                                  await actions.checkRfidTagExists(
+                                FFAppState().host,
+                                FFAppState().port,
+                                FFAppState().dbname,
+                                FFAppState().user,
+                                FFAppState().password,
+                                FFAppState().scannedTagId,
+                              );
+                              if (_model.checktag!) {
+                                ScaffoldMessenger.of(context).showSnackBar(
+                                  SnackBar(
+                                    content: Text(
+                                      'Tag Already Exist!',
+                                      style: TextStyle(
+                                        color: FlutterFlowTheme.of(context)
+                                            .onSecondary,
+                                      ),
+                                    ),
+                                    duration: Duration(milliseconds: 4000),
+                                    backgroundColor:
+                                        FlutterFlowTheme.of(context).secondary,
+                                  ),
+                                );
+                              } else {
+                                _model.tagisadded = await actions.addRfidTag(
                                   FFAppState().host,
                                   FFAppState().port,
                                   FFAppState().dbname,
                                   FFAppState().user,
                                   FFAppState().password,
-                                  FFAppState().scannedTagId,
+                                  widget.editTagId!,
+                                  _model.descTextFieldTextController.text,
                                 );
-                                if (_model.checktag!) {
+                                if (_model.tagisadded!) {
                                   ScaffoldMessenger.of(context).showSnackBar(
                                     SnackBar(
                                       content: Text(
-                                        'Tag Already Exist!',
+                                        'tag saved!',
                                         style: TextStyle(
                                           color: FlutterFlowTheme.of(context)
-                                              .primaryText,
+                                              .onSecondary,
                                         ),
                                       ),
                                       duration: Duration(milliseconds: 4000),
@@ -1089,72 +1179,37 @@ class _AddNewTagWidgetState extends State<AddNewTagWidget> {
                                     ),
                                   );
                                 } else {
-                                  _model.tagisadded = await actions.addRfidTag(
-                                    FFAppState().host,
-                                    FFAppState().port,
-                                    FFAppState().dbname,
-                                    FFAppState().user,
-                                    FFAppState().password,
-                                    widget.editTagId!,
-                                    _model.descTextFieldTextController.text,
-                                  );
-                                  if (_model.tagisadded!) {
-                                    ScaffoldMessenger.of(context).showSnackBar(
-                                      SnackBar(
-                                        content: Text(
-                                          'tag saved!',
-                                          style: TextStyle(
-                                            color: FlutterFlowTheme.of(context)
-                                                .primaryText,
-                                          ),
+                                  ScaffoldMessenger.of(context).showSnackBar(
+                                    SnackBar(
+                                      content: Text(
+                                        'tag saving error !',
+                                        style: TextStyle(
+                                          color: FlutterFlowTheme.of(context)
+                                              .onSecondary,
                                         ),
-                                        duration: Duration(milliseconds: 4000),
-                                        backgroundColor:
-                                            FlutterFlowTheme.of(context)
-                                                .secondary,
                                       ),
-                                    );
-                                  } else {
-                                    ScaffoldMessenger.of(context).showSnackBar(
-                                      SnackBar(
-                                        content: Text(
-                                          'tag saving error !',
-                                          style: TextStyle(
-                                            color: FlutterFlowTheme.of(context)
-                                                .primaryText,
-                                          ),
-                                        ),
-                                        duration: Duration(milliseconds: 4000),
-                                        backgroundColor:
-                                            FlutterFlowTheme.of(context)
-                                                .secondary,
-                                      ),
-                                    );
-                                  }
-                                }
-
-                                safeSetState(() {});
-                              },
-                        text: 'Save Tag',
-                        options: FFButtonOptions(
-                          height: 50.0,
-                          padding: EdgeInsetsDirectional.fromSTEB(
-                              16.0, 0.0, 16.0, 0.0),
-                          iconPadding: EdgeInsetsDirectional.fromSTEB(
-                              0.0, 0.0, 0.0, 0.0),
-                          color: FlutterFlowTheme.of(context).tertiary,
-                          textStyle:
-                              FlutterFlowTheme.of(context).titleSmall.override(
-                                    font: GoogleFonts.interTight(
-                                      fontWeight: FlutterFlowTheme.of(context)
-                                          .titleSmall
-                                          .fontWeight,
-                                      fontStyle: FlutterFlowTheme.of(context)
-                                          .titleSmall
-                                          .fontStyle,
+                                      duration: Duration(milliseconds: 4000),
+                                      backgroundColor:
+                                          FlutterFlowTheme.of(context)
+                                              .secondary,
                                     ),
-                                    color: Colors.white,
-                                    letterSpacing: 0.0,
+                                  );
+                                }
+                              }
+
+                              safeSetState(() {});
+                            },
+                      text: 'Save Tag',
+                      options: FFButtonOptions(
+                        height: 50.0,
+                        padding: EdgeInsetsDirectional.fromSTEB(
+                            16.0, 0.0, 16.0, 0.0),
+                        iconPadding:
+                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                        color: Colors.black,
+                        textStyle:
+                            FlutterFlowTheme.of(context).titleSmall.override(
+                                  font: GoogleFonts.interTight(
                                     fontWeight: FlutterFlowTheme.of(context)
                                         .titleSmall
                                         .fontWeight,
@@ -1162,79 +1217,85 @@ class _AddNewTagWidgetState extends State<AddNewTagWidget> {
                                         .titleSmall
                                         .fontStyle,
                                   ),
-                          elevation: 0.0,
-                          borderRadius: BorderRadius.circular(14.0),
-                          disabledColor: FlutterFlowTheme.of(context).accent4,
+                                  color: Colors.black,
+                                  letterSpacing: 0.0,
+                                  fontWeight: FlutterFlowTheme.of(context)
+                                      .titleSmall
+                                      .fontWeight,
+                                  fontStyle: FlutterFlowTheme.of(context)
+                                      .titleSmall
+                                      .fontStyle,
+                                ),
+                        elevation: 0.0,
+                        borderSide: BorderSide(
+                          color: Colors.black,
                         ),
+                        borderRadius: BorderRadius.circular(14.0),
+                        disabledColor: FlutterFlowTheme.of(context).accent4,
                       ),
                     ),
                   ),
-                  Padding(
-                    padding:
-                        EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
-                    child: InkWell(
-                      splashColor: Colors.transparent,
-                      focusColor: Colors.transparent,
-                      hoverColor: Colors.transparent,
-                      highlightColor: Colors.transparent,
-                      onTap: () async {
-                        safeSetState(() {
-                          _model.partNOTextTextController?.clear();
-                          _model.descTextFieldTextController?.clear();
-                          _model.serialTextFieldTextController?.clear();
-                        });
-                        _model.scannedTagId = ' test';
-                        safeSetState(() {});
-                      },
-                      child: Container(
-                        width: double.infinity,
-                        height: 50.0,
-                        decoration: BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.circular(14.0),
-                          border: Border.all(
-                            color: Color(0xFFE0E0E0),
-                            width: 1.5,
-                          ),
+                  InkWell(
+                    splashColor: Colors.transparent,
+                    focusColor: Colors.transparent,
+                    hoverColor: Colors.transparent,
+                    highlightColor: Colors.transparent,
+                    onTap: () async {
+                      safeSetState(() {
+                        _model.partNOTextTextController?.clear();
+                        _model.descTextFieldTextController?.clear();
+                        _model.serialTextFieldTextController?.clear();
+                      });
+                      _model.scannedTagId = ' test';
+                      safeSetState(() {});
+                    },
+                    child: Container(
+                      width: double.infinity,
+                      height: 50.0,
+                      decoration: BoxDecoration(
+                        color: Colors.black,
+                        borderRadius: BorderRadius.circular(14.0),
+                        border: Border.all(
+                          color: Colors.black,
+                          width: 1.5,
                         ),
-                        child: Padding(
-                          padding: EdgeInsets.all(12.0),
-                          child: Row(
-                            mainAxisSize: MainAxisSize.max,
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Icon(
-                                Icons.refresh_rounded,
-                                color: Color(0xFF888888),
-                                size: 18.0,
-                              ),
-                              Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
-                                    8.0, 0.0, 8.0, 0.0),
-                                child: Text(
-                                  'Reset Fields',
-                                  style: FlutterFlowTheme.of(context)
-                                      .titleSmall
-                                      .override(
-                                        font: GoogleFonts.interTight(
-                                          fontWeight: FontWeight.w600,
-                                          fontStyle:
-                                              FlutterFlowTheme.of(context)
-                                                  .titleSmall
-                                                  .fontStyle,
-                                        ),
-                                        color: Color(0xFF666666),
-                                        fontSize: 15.0,
-                                        letterSpacing: 0.0,
+                      ),
+                      child: Padding(
+                        padding: EdgeInsets.all(12.0),
+                        child: Row(
+                          mainAxisSize: MainAxisSize.max,
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Icon(
+                              Icons.refresh_rounded,
+                              color: Colors.white,
+                              size: 18.0,
+                            ),
+                            Padding(
+                              padding: EdgeInsetsDirectional.fromSTEB(
+                                  8.0, 0.0, 8.0, 0.0),
+                              child: Text(
+                                'Reset Fields',
+                                style: FlutterFlowTheme.of(context)
+                                    .titleSmall
+                                    .override(
+                                      font: GoogleFonts.interTight(
                                         fontWeight: FontWeight.w600,
                                         fontStyle: FlutterFlowTheme.of(context)
                                             .titleSmall
                                             .fontStyle,
                                       ),
-                                ),
+                                      color: Colors.white,
+                                      fontSize: 15.0,
+                                      letterSpacing: 0.0,
+                                      fontWeight: FontWeight.w600,
+                                      fontStyle: FlutterFlowTheme.of(context)
+                                          .titleSmall
+                                          .fontStyle,
+                                    ),
                               ),
-                            ],
-                          ),
+                            ),
+                          ].divide(SizedBox(width: 8.0)),
                         ),
                       ),
                     ),

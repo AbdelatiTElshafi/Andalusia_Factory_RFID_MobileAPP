@@ -12,3 +12,7 @@ export 'update_sqlite_products_from_mysql.dart'
     show updateSqliteProductsFromMysql;
 export 'add_rfid_tag.dart' show addRfidTag;
 export 'check_rfid_tag_exists.dart' show checkRfidTagExists;
+export 'calculate_and_update_stage_duration.dart'
+    show calculateAndUpdateStageDuration;
+export 'update_rfid_scan_time.dart' show updateRfidScanTime;
+export 'get_rfid_description.dart' show getRfidDescription;

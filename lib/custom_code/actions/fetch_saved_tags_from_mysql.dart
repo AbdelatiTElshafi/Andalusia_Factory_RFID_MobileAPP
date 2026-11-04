@@ -1,4 +1,5 @@
 // Automatic FlutterFlow imports
+import '/flutter_flow/ff_builtin_enums.dart';
 import '/backend/sqlite/sqlite_manager.dart';
 import '/actions/actions.dart' as action_blocks;
 import '/flutter_flow/flutter_flow_theme.dart';

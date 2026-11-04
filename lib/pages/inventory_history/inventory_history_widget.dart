@@ -59,7 +59,7 @@ class _InventoryHistoryWidgetState extends State<InventoryHistoryWidget> {
             onPressed: () async {
               context.pushNamed(CreateInventoryWidget.routeName);
             },
-            backgroundColor: FlutterFlowTheme.of(context).tertiary,
+            backgroundColor: FlutterFlowTheme.of(context).primary,
             icon: Icon(
               Icons.add_rounded,
               color: FlutterFlowTheme.of(context).primaryBackground,
@@ -167,14 +167,14 @@ class _InventoryHistoryWidgetState extends State<InventoryHistoryWidget> {
                       width: 48.0,
                       height: 48.0,
                       decoration: BoxDecoration(
-                        color: FlutterFlowTheme.of(context).primary25,
+                        color: FlutterFlowTheme.of(context).primary,
                         borderRadius: BorderRadius.circular(16.0),
                         shape: BoxShape.rectangle,
                       ),
                       alignment: AlignmentDirectional(0.0, 0.0),
                       child: Icon(
                         Icons.sensors_rounded,
-                        color: Colors.white,
+                        color: Colors.black,
                         size: 28.0,
                       ),
                     ),

@@ -47,11 +47,6 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, params) => HomeWidget(),
         ),
         FFRoute(
-          name: SavedTagsWidget.routeName,
-          path: SavedTagsWidget.routePath,
-          builder: (context, params) => SavedTagsWidget(),
-        ),
-        FFRoute(
           name: AddNewTagWidget.routeName,
           path: AddNewTagWidget.routePath,
           builder: (context, params) => AddNewTagWidget(
@@ -112,6 +107,28 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: LoadingPageWidget.routeName,
           path: LoadingPageWidget.routePath,
           builder: (context, params) => LoadingPageWidget(),
+        ),
+        FFRoute(
+          name: EndingProcessWidget.routeName,
+          path: EndingProcessWidget.routePath,
+          builder: (context, params) => EndingProcessWidget(
+            isEdit: params.getParam(
+              'isEdit',
+              ParamType.bool,
+            ),
+            editNameDesc: params.getParam(
+              'editNameDesc',
+              ParamType.String,
+            ),
+            editSerialNumber: params.getParam(
+              'editSerialNumber',
+              ParamType.String,
+            ),
+            editTagId: params.getParam(
+              'editTagId',
+              ParamType.String,
+            ),
+          ),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );

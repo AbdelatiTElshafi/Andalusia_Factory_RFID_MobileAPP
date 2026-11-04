@@ -93,16 +93,7 @@ class _StartPageWidgetState extends State<StartPageWidget> {
                 width: double.infinity,
                 height: double.infinity,
                 decoration: BoxDecoration(
-                  gradient: LinearGradient(
-                    colors: [
-                      FlutterFlowTheme.of(context).tertiary,
-                      Color(0xFF6D412E),
-                      FlutterFlowTheme.of(context).primaryBackground
-                    ],
-                    stops: [0.0, 0.5, 1.0],
-                    begin: AlignmentDirectional(0.0, -1.0),
-                    end: AlignmentDirectional(0, 1.0),
-                  ),
+                  color: FlutterFlowTheme.of(context).secondaryBackground,
                 ),
               ),
               Padding(
@@ -126,8 +117,9 @@ class _StartPageWidgetState extends State<StartPageWidget> {
                       child: Align(
                         alignment: AlignmentDirectional(0.0, 0.0),
                         child: Icon(
-                          Icons.rocket_launch_rounded,
-                          color: Colors.white,
+                          FFIcons
+                              .kwhatsappImage20260520At51901PmRemovebgPreview1,
+                          color: FlutterFlowTheme.of(context).primaryText,
                           size: 56.0,
                         ),
                       ),
@@ -148,7 +140,7 @@ class _StartPageWidgetState extends State<StartPageWidget> {
                                       .displaySmall
                                       .fontStyle,
                                 ),
-                                color: Colors.white,
+                                color: FlutterFlowTheme.of(context).primaryText,
                                 letterSpacing: 0.0,
                                 fontWeight: FontWeight.bold,
                                 fontStyle: FlutterFlowTheme.of(context)
@@ -159,25 +151,27 @@ class _StartPageWidgetState extends State<StartPageWidget> {
                         Text(
                           'Initializing your experience...',
                           textAlign: TextAlign.center,
-                          style:
-                              FlutterFlowTheme.of(context).bodyLarge.override(
-                                    font: GoogleFonts.ibmPlexSansArabic(
-                                      fontWeight: FlutterFlowTheme.of(context)
-                                          .bodyLarge
-                                          .fontWeight,
-                                      fontStyle: FlutterFlowTheme.of(context)
-                                          .bodyLarge
-                                          .fontStyle,
-                                    ),
-                                    color: Color(0x99FFFFFF),
-                                    letterSpacing: 0.0,
-                                    fontWeight: FlutterFlowTheme.of(context)
-                                        .bodyLarge
-                                        .fontWeight,
-                                    fontStyle: FlutterFlowTheme.of(context)
-                                        .bodyLarge
-                                        .fontStyle,
-                                  ),
+                          style: FlutterFlowTheme.of(context)
+                              .bodyLarge
+                              .override(
+                                font: GoogleFonts.ibmPlexSansArabic(
+                                  fontWeight: FlutterFlowTheme.of(context)
+                                      .bodyLarge
+                                      .fontWeight,
+                                  fontStyle: FlutterFlowTheme.of(context)
+                                      .bodyLarge
+                                      .fontStyle,
+                                ),
+                                color:
+                                    FlutterFlowTheme.of(context).secondaryText,
+                                letterSpacing: 0.0,
+                                fontWeight: FlutterFlowTheme.of(context)
+                                    .bodyLarge
+                                    .fontWeight,
+                                fontStyle: FlutterFlowTheme.of(context)
+                                    .bodyLarge
+                                    .fontStyle,
+                              ),
                         ),
                       ].divide(SizedBox(height: 8.0)),
                     ),
@@ -185,7 +179,7 @@ class _StartPageWidgetState extends State<StartPageWidget> {
                       width: 200.0,
                       height: 4.0,
                       decoration: BoxDecoration(
-                        color: Color(0x33FFFFFF),
+                        color: Color(0x1A000000),
                         borderRadius: BorderRadius.circular(4.0),
                       ),
                       child: Container(
@@ -194,7 +188,7 @@ class _StartPageWidgetState extends State<StartPageWidget> {
                         decoration: BoxDecoration(
                           gradient: LinearGradient(
                             colors: [
-                              Colors.white,
+                              Colors.black,
                               FlutterFlowTheme.of(context).primary
                             ],
                             stops: [0.0, 1.0],
@@ -217,7 +211,7 @@ class _StartPageWidgetState extends State<StartPageWidget> {
                                   .labelMedium
                                   .fontStyle,
                             ),
-                            color: Color(0x66FFFFFF),
+                            color: FlutterFlowTheme.of(context).alternate,
                             letterSpacing: 0.0,
                             fontWeight: FlutterFlowTheme.of(context)
                                 .labelMedium
@@ -246,14 +240,16 @@ class _StartPageWidgetState extends State<StartPageWidget> {
                               width: 48.0,
                               height: 48.0,
                               decoration: BoxDecoration(
-                                color: Color(0x1AFFFFFF),
+                                color: FlutterFlowTheme.of(context)
+                                    .primaryBackground,
                                 borderRadius: BorderRadius.circular(12.0),
                               ),
                               child: Align(
                                 alignment: AlignmentDirectional(0.0, 0.0),
                                 child: Icon(
                                   Icons.cloud_done_outlined,
-                                  color: Colors.white,
+                                  color:
+                                      FlutterFlowTheme.of(context).primaryText,
                                   size: 24.0,
                                 ),
                               ),
@@ -262,14 +258,16 @@ class _StartPageWidgetState extends State<StartPageWidget> {
                               width: 48.0,
                               height: 48.0,
                               decoration: BoxDecoration(
-                                color: Color(0x1AFFFFFF),
+                                color: FlutterFlowTheme.of(context)
+                                    .primaryBackground,
                                 borderRadius: BorderRadius.circular(12.0),
                               ),
                               child: Align(
                                 alignment: AlignmentDirectional(0.0, 0.0),
                                 child: Icon(
                                   Icons.security_rounded,
-                                  color: Colors.white,
+                                  color:
+                                      FlutterFlowTheme.of(context).primaryText,
                                   size: 24.0,
                                 ),
                               ),
@@ -278,14 +276,16 @@ class _StartPageWidgetState extends State<StartPageWidget> {
                               width: 48.0,
                               height: 48.0,
                               decoration: BoxDecoration(
-                                color: Color(0x1AFFFFFF),
+                                color: FlutterFlowTheme.of(context)
+                                    .primaryBackground,
                                 borderRadius: BorderRadius.circular(12.0),
                               ),
                               child: Align(
                                 alignment: AlignmentDirectional(0.0, 0.0),
                                 child: Icon(
                                   Icons.speed_rounded,
-                                  color: Colors.white,
+                                  color:
+                                      FlutterFlowTheme.of(context).primaryText,
                                   size: 24.0,
                                 ),
                               ),
@@ -310,7 +310,8 @@ class _StartPageWidgetState extends State<StartPageWidget> {
                                           .labelSmall
                                           .fontStyle,
                                     ),
-                                    color: Color(0x80FFFFFF),
+                                    color: FlutterFlowTheme.of(context)
+                                        .secondaryText,
                                     letterSpacing: 0.0,
                                     fontWeight: FlutterFlowTheme.of(context)
                                         .labelSmall
@@ -334,7 +335,8 @@ class _StartPageWidgetState extends State<StartPageWidget> {
                                           .labelSmall
                                           .fontStyle,
                                     ),
-                                    color: Color(0x80FFFFFF),
+                                    color: FlutterFlowTheme.of(context)
+                                        .secondaryText,
                                     letterSpacing: 0.0,
                                     fontWeight: FlutterFlowTheme.of(context)
                                         .labelSmall
@@ -358,7 +360,8 @@ class _StartPageWidgetState extends State<StartPageWidget> {
                                           .labelSmall
                                           .fontStyle,
                                     ),
-                                    color: Color(0x80FFFFFF),
+                                    color: FlutterFlowTheme.of(context)
+                                        .secondaryText,
                                     letterSpacing: 0.0,
                                     fontWeight: FlutterFlowTheme.of(context)
                                         .labelSmall
@@ -393,7 +396,7 @@ class _StartPageWidgetState extends State<StartPageWidget> {
                                   .labelSmall
                                   .fontStyle,
                             ),
-                            color: Color(0x4DFFFFFF),
+                            color: FlutterFlowTheme.of(context).secondaryText,
                             letterSpacing: 0.0,
                             fontWeight: FlutterFlowTheme.of(context)
                                 .labelSmall

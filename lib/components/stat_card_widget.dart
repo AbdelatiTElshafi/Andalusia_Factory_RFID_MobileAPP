@@ -46,7 +46,7 @@ class _StatCardWidgetState extends State<StatCardWidget> {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-        color: FlutterFlowTheme.of(context).secondaryBackground,
+        color: Colors.black,
         borderRadius: BorderRadius.circular(24.0),
         shape: BoxShape.rectangle,
         border: Border.all(
@@ -74,7 +74,7 @@ class _StatCardWidgetState extends State<StatCardWidget> {
                         fontStyle:
                             FlutterFlowTheme.of(context).labelMedium.fontStyle,
                       ),
-                      color: FlutterFlowTheme.of(context).secondaryText,
+                      color: Color(0xFFCCCCCC),
                       letterSpacing: 0.0,
                       fontWeight:
                           FlutterFlowTheme.of(context).labelMedium.fontWeight,
@@ -95,7 +95,7 @@ class _StatCardWidgetState extends State<StatCardWidget> {
                             .headlineMedium
                             .fontStyle,
                       ),
-                      color: FlutterFlowTheme.of(context).primaryText,
+                      color: Colors.white,
                       letterSpacing: 0.0,
                       fontWeight: FontWeight.bold,
                       fontStyle:

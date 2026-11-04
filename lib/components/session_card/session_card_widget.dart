@@ -62,7 +62,7 @@ class _SessionCardWidgetState extends State<SessionCardWidget> {
       child: Container(
         child: Container(
           decoration: BoxDecoration(
-            color: FlutterFlowTheme.of(context).secondaryBackground,
+            color: Colors.black,
             borderRadius: BorderRadius.circular(24.0),
             shape: BoxShape.rectangle,
             border: Border.all(
@@ -88,23 +88,22 @@ class _SessionCardWidgetState extends State<SessionCardWidget> {
                           widget.session_id,
                           'INV-2023-0891',
                         ),
-                        style: FlutterFlowTheme.of(context)
-                            .titleMedium
-                            .override(
-                              font: GoogleFonts.ibmPlexSansArabic(
-                                fontWeight: FontWeight.bold,
-                                fontStyle: FlutterFlowTheme.of(context)
-                                    .titleMedium
-                                    .fontStyle,
-                              ),
-                              color: FlutterFlowTheme.of(context).primaryText,
-                              letterSpacing: 0.0,
-                              fontWeight: FontWeight.bold,
-                              fontStyle: FlutterFlowTheme.of(context)
-                                  .titleMedium
-                                  .fontStyle,
-                              lineHeight: 1.4,
-                            ),
+                        style:
+                            FlutterFlowTheme.of(context).titleMedium.override(
+                                  font: GoogleFonts.ibmPlexSansArabic(
+                                    fontWeight: FontWeight.bold,
+                                    fontStyle: FlutterFlowTheme.of(context)
+                                        .titleMedium
+                                        .fontStyle,
+                                  ),
+                                  color: Colors.white,
+                                  letterSpacing: 0.0,
+                                  fontWeight: FontWeight.bold,
+                                  fontStyle: FlutterFlowTheme.of(context)
+                                      .titleMedium
+                                      .fontStyle,
+                                  lineHeight: 1.4,
+                                ),
                       ),
                       Align(
                         alignment: AlignmentDirectional(1.0, 0.0),
@@ -133,7 +132,7 @@ class _SessionCardWidgetState extends State<SessionCardWidget> {
                             },
                             child: Icon(
                               Icons.info,
-                              color: FlutterFlowTheme.of(context).primaryText,
+                              color: Colors.white,
                               size: 24.0,
                             ),
                           ),
@@ -169,8 +168,7 @@ class _SessionCardWidgetState extends State<SessionCardWidget> {
                                           .bodySmall
                                           .fontStyle,
                                     ),
-                                    color: FlutterFlowTheme.of(context)
-                                        .secondaryText,
+                                    color: Color(0xFFCCCCCC),
                                     letterSpacing: 0.0,
                                     fontWeight: FlutterFlowTheme.of(context)
                                         .bodySmall
@@ -198,7 +196,7 @@ class _SessionCardWidgetState extends State<SessionCardWidget> {
                     thickness: 1.0,
                     indent: 0.0,
                     endIndent: 0.0,
-                    color: FlutterFlowTheme.of(context).alternate,
+                    color: Color(0xFF444444),
                   ),
                   InkWell(
                     splashColor: Colors.transparent,
@@ -227,7 +225,7 @@ class _SessionCardWidgetState extends State<SessionCardWidget> {
                         content: 'Start Scan',
                         icon: Icon(
                           Icons.arrow_forward_rounded,
-                          color: FlutterFlowTheme.of(context).primary,
+                          color: Colors.black,
                           size: 16.0,
                         ),
                         icon_present: true,
