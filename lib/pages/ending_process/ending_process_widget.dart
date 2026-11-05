@@ -121,7 +121,7 @@ class _EndingProcessWidgetState extends State<EndingProcessWidget> {
               buttonSize: 44.0,
               icon: Icon(
                 Icons.arrow_back_rounded,
-                color: Colors.white,
+                color: Color(0xFF111111),
                 size: 24.0,
               ),
               onPressed: () async {
@@ -137,7 +137,7 @@ class _EndingProcessWidgetState extends State<EndingProcessWidget> {
                     fontStyle:
                         FlutterFlowTheme.of(context).titleLarge.fontStyle,
                   ),
-                  color: Colors.white,
+                  color: Color(0xFF111111),
                   fontSize: 20.0,
                   letterSpacing: 0.0,
                   fontWeight: FontWeight.bold,
@@ -145,7 +145,7 @@ class _EndingProcessWidgetState extends State<EndingProcessWidget> {
                 ),
           ),
           actions: [],
-          centerTitle: false,
+          centerTitle: true,
           elevation: 0.0,
         ),
         body: SafeArea(

@@ -19,10 +19,6 @@ class HomeModel extends FlutterFlowModel<HomeWidget> {
 
   ///  State fields for stateful widgets in this page.
 
-  // Stores action output result for [Custom Action - updateSqliteProductsFromMysql] action in Container widget.
-  bool? sqlupdate;
-  // Stores action output result for [Custom Action - syncSqliteToMysql] action in Container widget.
-  bool? syncstatus;
   // Model for Loading component.
   late LoadingModel loadingModel;
 

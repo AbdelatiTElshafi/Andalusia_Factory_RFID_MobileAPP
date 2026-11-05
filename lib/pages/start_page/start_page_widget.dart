@@ -104,8 +104,8 @@ class _StartPageWidgetState extends State<StartPageWidget> {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     Container(
-                      width: 120.0,
-                      height: 120.0,
+                      width: 150.0,
+                      height: 150.0,
                       decoration: BoxDecoration(
                         color: Color(0x33FFFFFF),
                         shape: BoxShape.circle,
@@ -120,7 +120,7 @@ class _StartPageWidgetState extends State<StartPageWidget> {
                           FFIcons
                               .kwhatsappImage20260520At51901PmRemovebgPreview1,
                           color: FlutterFlowTheme.of(context).primaryText,
-                          size: 56.0,
+                          size: 150.0,
                         ),
                       ),
                     ),
@@ -211,7 +211,7 @@ class _StartPageWidgetState extends State<StartPageWidget> {
                                   .labelMedium
                                   .fontStyle,
                             ),
-                            color: FlutterFlowTheme.of(context).alternate,
+                            color: FlutterFlowTheme.of(context).secondaryText,
                             letterSpacing: 0.0,
                             fontWeight: FlutterFlowTheme.of(context)
                                 .labelMedium

@@ -1,3 +1,4 @@
+import '/flutter_flow/ff_builtin_enums.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
@@ -87,8 +88,11 @@ class _SettingPageWidgetState extends State<SettingPageWidget> {
                       child: Container(
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          crossAxisAlignment: CrossAxisAlignment.center,
+                          mainAxisAlignment:
+                              (FFMainAxisAlignment.start).flutterValue,
+                          crossAxisAlignment:
+                              (FFCrossAxisAlignment.center).flutterValue,
+                          textBaseline: TextBaseline.alphabetic,
                           children: [
                             FlutterFlowIconButton(
                               borderRadius: 8.0,
@@ -122,7 +126,7 @@ class _SettingPageWidgetState extends State<SettingPageWidget> {
                                     lineHeight: 1.4,
                                   ),
                             ),
-                          ].divide(SizedBox(width: 16.0)),
+                          ].divide(SizedBox(width: 40.0)),
                         ),
                       ),
                     ),
@@ -265,7 +269,7 @@ class _SettingPageWidgetState extends State<SettingPageWidget> {
                                   ),
                           enabledBorder: OutlineInputBorder(
                             borderSide: BorderSide(
-                              color: Color(0x00000000),
+                              color: Color(0xFF999999),
                               width: 1.0,
                             ),
                             borderRadius: BorderRadius.circular(8.0),
@@ -367,7 +371,7 @@ class _SettingPageWidgetState extends State<SettingPageWidget> {
                                   ),
                           enabledBorder: OutlineInputBorder(
                             borderSide: BorderSide(
-                              color: Color(0x00000000),
+                              color: Color(0xFF999999),
                               width: 1.0,
                             ),
                             borderRadius: BorderRadius.circular(8.0),
@@ -469,7 +473,7 @@ class _SettingPageWidgetState extends State<SettingPageWidget> {
                                   ),
                           enabledBorder: OutlineInputBorder(
                             borderSide: BorderSide(
-                              color: Color(0x00000000),
+                              color: Color(0xFF999999),
                               width: 1.0,
                             ),
                             borderRadius: BorderRadius.circular(8.0),
@@ -571,7 +575,7 @@ class _SettingPageWidgetState extends State<SettingPageWidget> {
                                   ),
                           enabledBorder: OutlineInputBorder(
                             borderSide: BorderSide(
-                              color: Color(0x00000000),
+                              color: Color(0xFF999999),
                               width: 1.0,
                             ),
                             borderRadius: BorderRadius.circular(8.0),
@@ -673,7 +677,7 @@ class _SettingPageWidgetState extends State<SettingPageWidget> {
                                   ),
                           enabledBorder: OutlineInputBorder(
                             borderSide: BorderSide(
-                              color: Color(0x00000000),
+                              color: Color(0xFF999999),
                               width: 1.0,
                             ),
                             borderRadius: BorderRadius.circular(8.0),

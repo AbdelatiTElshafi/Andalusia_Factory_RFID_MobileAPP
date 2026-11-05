@@ -4,7 +4,6 @@ import '/components/export_option_card_widget.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/custom_code/actions/index.dart' as actions;
-import '/index.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'inventoryactions_model.dart';
@@ -145,33 +144,22 @@ class _InventoryactionsWidgetState extends State<InventoryactionsWidget> {
                             ),
                           ].divide(SizedBox(height: 4.0)),
                         ),
-                        InkWell(
-                          splashColor: Colors.transparent,
-                          focusColor: Colors.transparent,
-                          hoverColor: Colors.transparent,
-                          highlightColor: Colors.transparent,
-                          onTap: () async {
-                            context.pushNamed(InventoryHistoryWidget.routeName);
-
-                            Navigator.pop(context);
-                          },
-                          child: Container(
-                            decoration: BoxDecoration(
-                              color: FlutterFlowTheme.of(context).accent4,
-                              borderRadius: BorderRadius.circular(9999.0),
-                              shape: BoxShape.rectangle,
-                            ),
-                            child: Padding(
-                              padding: EdgeInsets.all(8.0),
+                        Container(
+                          decoration: BoxDecoration(
+                            color: FlutterFlowTheme.of(context).accent4,
+                            borderRadius: BorderRadius.circular(9999.0),
+                            shape: BoxShape.rectangle,
+                          ),
+                          child: Padding(
+                            padding: EdgeInsets.all(8.0),
+                            child: Container(
                               child: Container(
-                                child: Container(
-                                  alignment: AlignmentDirectional(0.0, 0.0),
-                                  child: Icon(
-                                    Icons.close_rounded,
-                                    color: FlutterFlowTheme.of(context)
-                                        .primaryText,
-                                    size: 20.0,
-                                  ),
+                                alignment: AlignmentDirectional(0.0, 0.0),
+                                child: Icon(
+                                  Icons.close_rounded,
+                                  color:
+                                      FlutterFlowTheme.of(context).primaryText,
+                                  size: 20.0,
                                 ),
                               ),
                             ),
@@ -181,63 +169,30 @@ class _InventoryactionsWidgetState extends State<InventoryactionsWidget> {
                     ),
                   ),
                 ),
-                InkWell(
-                  splashColor: Colors.transparent,
-                  focusColor: Colors.transparent,
-                  hoverColor: Colors.transparent,
-                  highlightColor: Colors.transparent,
-                  onTap: () async {
-                    await SQLiteManager.instance.updateIneventoryOrder(
-                      inventoryno: widget.inventoryID,
-                      status: 'completed',
-                    );
-
-                    context.pushNamed(InventoryHistoryWidget.routeName);
-
-                    Navigator.pop(context);
-                  },
-                  child: wrapWithModel(
-                    model: _model.exportOptionCardModel1,
-                    updateCallback: () => safeSetState(() {}),
-                    child: ExportOptionCardWidget(
-                      icon: Icon(
-                        Icons.done_all,
-                        color: FlutterFlowTheme.of(context).primary,
-                        size: 24.0,
-                      ),
-                      subtitle: 'Ready to print inventory report',
-                      title: 'Complete Session',
+                wrapWithModel(
+                  model: _model.exportOptionCardModel1,
+                  updateCallback: () => safeSetState(() {}),
+                  child: ExportOptionCardWidget(
+                    icon: Icon(
+                      Icons.done_all,
+                      color: FlutterFlowTheme.of(context).primary,
+                      size: 24.0,
                     ),
+                    subtitle: 'Ready to print inventory report',
+                    title: 'Complete Session',
                   ),
                 ),
-                InkWell(
-                  splashColor: Colors.transparent,
-                  focusColor: Colors.transparent,
-                  hoverColor: Colors.transparent,
-                  highlightColor: Colors.transparent,
-                  onTap: () async {
-                    await SQLiteManager.instance.updateIneventoryOrder(
-                      inventoryno: widget.inventoryID,
-                      status: 'deleted',
-                    );
-
-                    context.pushNamed(InventoryHistoryWidget.routeName);
-
-                    Navigator.pop(context);
-                    safeSetState(() {});
-                  },
-                  child: wrapWithModel(
-                    model: _model.exportOptionCardModel2,
-                    updateCallback: () => safeSetState(() {}),
-                    child: ExportOptionCardWidget(
-                      icon: Icon(
-                        Icons.delete_forever,
-                        color: FlutterFlowTheme.of(context).primary,
-                        size: 24.0,
-                      ),
-                      subtitle: 'Best for Excel or database imports',
-                      title: 'Delete Session',
+                wrapWithModel(
+                  model: _model.exportOptionCardModel2,
+                  updateCallback: () => safeSetState(() {}),
+                  child: ExportOptionCardWidget(
+                    icon: Icon(
+                      Icons.delete_forever,
+                      color: FlutterFlowTheme.of(context).primary,
+                      size: 24.0,
                     ),
+                    subtitle: 'Best for Excel or database imports',
+                    title: 'Delete Session',
                   ),
                 ),
                 InkWell(
@@ -293,29 +248,18 @@ class _InventoryactionsWidgetState extends State<InventoryactionsWidget> {
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    InkWell(
-                      splashColor: Colors.transparent,
-                      focusColor: Colors.transparent,
-                      hoverColor: Colors.transparent,
-                      highlightColor: Colors.transparent,
-                      onTap: () async {
-                        context.pushNamed(InventoryHistoryWidget.routeName);
-
-                        Navigator.pop(context);
-                      },
-                      child: wrapWithModel(
-                        model: _model.buttonModel,
-                        updateCallback: () => safeSetState(() {}),
-                        child: Button3Widget(
-                          content: 'Cancel',
-                          icon_present: false,
-                          icon_end_present: false,
-                          variant: 'outline',
-                          size: 'large',
-                          full_width: true,
-                          loading: false,
-                          disabled: false,
-                        ),
+                    wrapWithModel(
+                      model: _model.buttonModel,
+                      updateCallback: () => safeSetState(() {}),
+                      child: Button3Widget(
+                        content: 'Cancel',
+                        icon_present: false,
+                        icon_end_present: false,
+                        variant: 'outline',
+                        size: 'large',
+                        full_width: true,
+                        loading: false,
+                        disabled: false,
                       ),
                     ),
                   ].divide(SizedBox(height: 16.0)),

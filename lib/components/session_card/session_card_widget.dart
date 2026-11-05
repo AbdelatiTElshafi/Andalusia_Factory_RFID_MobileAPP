@@ -3,7 +3,6 @@ import '/components/inventoryactions_widget.dart';
 import '/components/status_badge/status_badge_widget.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/index.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'session_card_model.dart';
@@ -198,44 +197,23 @@ class _SessionCardWidgetState extends State<SessionCardWidget> {
                     endIndent: 0.0,
                     color: Color(0xFF444444),
                   ),
-                  InkWell(
-                    splashColor: Colors.transparent,
-                    focusColor: Colors.transparent,
-                    hoverColor: Colors.transparent,
-                    highlightColor: Colors.transparent,
-                    onTap: () async {
-                      FFAppState().scannedTagList = [];
-                      safeSetState(() {});
-                      if (widget.status == 'in_progress') {
-                        context.pushNamed(
-                          RFIDScanningWidget.routeName,
-                          queryParameters: {
-                            'inventoryOrder': serializeParam(
-                              widget.session_id,
-                              ParamType.String,
-                            ),
-                          }.withoutNulls,
-                        );
-                      }
-                    },
-                    child: wrapWithModel(
-                      model: _model.buttonModel,
-                      updateCallback: () => safeSetState(() {}),
-                      child: ButtonWidget(
-                        content: 'Start Scan',
-                        icon: Icon(
-                          Icons.arrow_forward_rounded,
-                          color: Colors.black,
-                          size: 16.0,
-                        ),
-                        icon_present: true,
-                        icon_end_present: false,
-                        variant: 'ghost',
-                        size: 'small',
-                        full_width: false,
-                        loading: false,
-                        disabled: false,
+                  wrapWithModel(
+                    model: _model.buttonModel,
+                    updateCallback: () => safeSetState(() {}),
+                    child: ButtonWidget(
+                      content: 'Start Scan',
+                      icon: Icon(
+                        Icons.arrow_forward_rounded,
+                        color: Colors.black,
+                        size: 16.0,
                       ),
+                      icon_present: true,
+                      icon_end_present: false,
+                      variant: 'ghost',
+                      size: 'small',
+                      full_width: false,
+                      loading: false,
+                      disabled: false,
                     ),
                   ),
                 ].divide(SizedBox(height: 16.0)),

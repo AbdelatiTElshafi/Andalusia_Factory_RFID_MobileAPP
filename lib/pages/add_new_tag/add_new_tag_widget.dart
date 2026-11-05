@@ -148,7 +148,7 @@ class _AddNewTagWidgetState extends State<AddNewTagWidget> {
                 ),
           ),
           actions: [],
-          centerTitle: false,
+          centerTitle: true,
           elevation: 0.0,
         ),
         body: SafeArea(
