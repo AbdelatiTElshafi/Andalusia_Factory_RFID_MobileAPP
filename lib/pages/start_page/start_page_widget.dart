@@ -1,11 +1,7 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/custom_code/actions/index.dart' as actions;
-import '/index.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'start_page_model.dart';
 export 'start_page_model.dart';
 
@@ -30,39 +26,6 @@ class _StartPageWidgetState extends State<StartPageWidget> {
   void initState() {
     super.initState();
     _model = createModel(context, () => StartPageModel());
-
-    // On page load action.
-    SchedulerBinding.instance.addPostFrameCallback((_) async {
-      _model.rFIDStatus = await actions.rfidConnection();
-      if (_model.rFIDStatus!) {
-        FFAppState().rfidConnected = true;
-        safeSetState(() {});
-      } else {
-        FFAppState().rfidConnected = false;
-        safeSetState(() {});
-        var confirmDialogResponse = await showDialog<bool>(
-              context: context,
-              builder: (alertDialogContext) {
-                return AlertDialog(
-                  title: Text('TEST'),
-                  actions: [
-                    TextButton(
-                      onPressed: () => Navigator.pop(alertDialogContext, false),
-                      child: Text('Cancel'),
-                    ),
-                    TextButton(
-                      onPressed: () => Navigator.pop(alertDialogContext, true),
-                      child: Text('Confirm'),
-                    ),
-                  ],
-                );
-              },
-            ) ??
-            false;
-      }
-
-      context.pushNamed(HomeWidget.routeName);
-    });
   }
 
   @override
@@ -74,8 +37,6 @@ class _StartPageWidgetState extends State<StartPageWidget> {
 
   @override
   Widget build(BuildContext context) {
-    context.watch<FFAppState>();
-
     return GestureDetector(
       onTap: () {
         FocusScope.of(context).unfocus();
