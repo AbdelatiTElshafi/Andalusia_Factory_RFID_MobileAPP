@@ -1,6 +1,8 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
+import '/index.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/scheduler.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'start_page_model.dart';
 export 'start_page_model.dart';
@@ -26,6 +28,11 @@ class _StartPageWidgetState extends State<StartPageWidget> {
   void initState() {
     super.initState();
     _model = createModel(context, () => StartPageModel());
+
+    // On page load action.
+    SchedulerBinding.instance.addPostFrameCallback((_) async {
+      context.pushNamed(HomeWidget.routeName);
+    });
   }
 
   @override
